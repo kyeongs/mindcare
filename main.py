@@ -1,7 +1,7 @@
 import streamlit as st
 import pymysql
 
-db = pymysql.connect(host="localhost", user="root", password="root", charset="utf8")
+db = pymysql.connect(host="192.168.68.1", user="root", password="root", charset="utf8")
 cursor = db.cursor()
 
 name = st.text_input('면담자 이름을 입력하세요', max_chars=10, key='name')
