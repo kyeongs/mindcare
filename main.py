@@ -1,7 +1,7 @@
 import streamlit as st
 import openpyxl as ox
 
-wb = ox.load_workbook('C:\\Users\\admin\\PycharmProjects\\web'+'mindcare.xlsx')
+wb = ox.load_workbook('C:\\Users\\admin\\PycharmProjects\\web'+mindcare.xlsx)
 ws = wb.active
 name = st.text_input('면담자 이름을 입력하세요', max_chars=10, key='name')
 
@@ -15,4 +15,4 @@ story = st.text_area('면담 내용')
 if st.button('저장'):
     ws.title = 'mindcare'
     ws.append([name, date, time, story])
-    wb.save('C:\\Users\\admin\\PycharmProjects\\web'+'mindcare.xlsx')
+    wb.save('C:\\Users\\admin\\PycharmProjects\\web'+mindcare.xlsx)
