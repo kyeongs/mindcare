@@ -1,7 +1,7 @@
 import streamlit as st
-from openpyxl import load_workbook
+import openpyxl as ox
 
-wb = load_workbook('mindcare.xlsx')
+wb = ox.load_workbook('mindcare.xlsx')
 ws = wb.active
 name = st.text_input('면담자 이름을 입력하세요', max_chars=10, key='name')
 
